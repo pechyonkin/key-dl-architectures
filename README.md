@@ -34,3 +34,5 @@ Partially this list comes from official [Keras applications](https://keras.io/ap
 **Why it is important**: Convolutional neural networks (CNNs) introduced in the paper are the foundation of modern state-of-the art deep learning. CNNs are built upon 3 main ideas: local receptive fields, shared weights and spacial subsampling. Local receptive fields with shared weights are the essence of convolutional layer and most [ALL?] architectures described below use convolutional layers in one form or another. 
 
 This network was used on large scale to automatically classify hand-written digits on bank cheques in the United States.
+
+![LeNet-5](/images/lenet-5.png)
