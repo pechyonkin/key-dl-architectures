@@ -14,7 +14,7 @@ Partially this list comes from official [Keras applications](https://keras.io/ap
 - InceptionV2, InceptionV3, 2016, [paper](https://arxiv.org/abs/1512.00567)
 - ResNet, 2015, [paper](https://arxiv.org/abs/1512.03385)
 - InceptionV4, 2016, [paper](https://arxiv.org/abs/1602.07261)
-- InceptionResNetV2 [paper](https://arxiv.org/abs/1602.07261) (same paper as InceptionV4)
+- InceptionResNetV2, [paper](https://arxiv.org/abs/1602.07261) (same paper as InceptionV4)
 - DenseNet, 2016, [paper](https://arxiv.org/abs/1608.06993)
 - Xception, 2016, [paper](https://arxiv.org/abs/1610.02357)
 - MobileNet, 2017, [paper](https://arxiv.org/abs/1704.04861)
@@ -27,5 +27,10 @@ Partially this list comes from official [Keras applications](https://keras.io/ap
 - xxx [paper]()
 
 
+## LeNet-5 (1998)
 
+**Main ideas**: local receptive fields, shared weights, spacial subsampling
 
+**Why it is important**: Convolutional neural networks (CNNs) introduced in the paper are the foundation of modern state-of-the art deep learning. CNNs are built upon 3 main ideas: local receptive fields, shared weights and spacial subsampling. Local receptive fields with shared weights are the essence of convolutional layer and most [ALL?] architectures described below use convolutional layers in one form or another. 
+
+This network was used on large scale to automatically classify hand-written digits on bank cheques in the United States.
