@@ -6,7 +6,7 @@ This repository provides overview of some of the prominent neural network archit
 
 Partially this list comes from official [Keras applications](https://keras.io/applications/). Sorted in chronological order:
 
-- LeNet, 1998, [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
+- [LeNet](#lenet-5-1998-paper-by-lecun-et-al), 1998, [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
 - AlexNet, 2012, [paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 - GoogLeNet, 2014, [paper](https://arxiv.org/abs/1409.4842)
 - Inception, 2014, [paper](https://arxiv.org/pdf/1409.4842v1.pdf), "Going deeper with convolutions"
