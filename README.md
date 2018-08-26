@@ -27,12 +27,27 @@ Partially this list comes from official [Keras applications](https://keras.io/ap
 - xxx [paper]()
 
 
-## LeNet-5 (1998)
+## LeNet-5 [1998, [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) by LeCun et al.]
+
+![LeNet-5](/images/lenet-5.png)
 
 **Main ideas**: local receptive fields, shared weights, spacial subsampling
 
-**Why it is important**: Convolutional neural networks (CNNs) introduced in the paper are the foundation of modern state-of-the art deep learning. CNNs are built upon 3 main ideas: local receptive fields, shared weights and spacial subsampling. Local receptive fields with shared weights are the essence of convolutional layer and most [ALL?] architectures described below use convolutional layers in one form or another. 
+**Why it is important**: LeNet-5 was used on large scale to automatically classify hand-written digits on bank cheques in the United States. This network is a convolutional neural network (CNNs). CNNs introduced in the paper are the foundation of modern state-of-the art deep learning. CNNs are built upon 3 main ideas: local receptive fields, shared weights and spacial subsampling. Local receptive fields with shared weights are the essence of the convolutional layer and most [ALL?] architectures described below use convolutional layers in one form or another. 
 
-This network was used on large scale to automatically classify hand-written digits on bank cheques in the United States.
+**Brief description**: 
 
-![LeNet-5](/images/lenet-5.png)
+**Additional readings**:
+
+
+## XXX [20xx, [paper]() by XXX et al.]
+
+![xxx](/images/xxx.png)
+
+**Main ideas**: 
+
+**Why it is important**: 
+
+**Brief description**:
+
+**Additional readings**:
