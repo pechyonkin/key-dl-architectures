@@ -2,7 +2,7 @@
 
 This repository provides overview of some of the prominent neural network architectures. Reading through this guide and all supplement materials will help you develop understanding of the modern neural network architectures and main ideas behind them. Before starting, you should have some familiarity with the basics of neural networks, backpropagation algorithm and gradient descent.
 
-### List of architectures in this guide
+### List of Architectures in this guide
 
 Sorted in chronological order. Click an architecture name to jump to corresponding part of the guide.
 
@@ -22,7 +22,7 @@ Sorted in chronological order. Click an architecture name to jump to correspondi
 - [SE-ResNet](#se-resnet-2017-paper-by-hu-et-al), 2017 ![imagenet_winner 2017](https://img.shields.io/badge/imagenet_winner-2017-brightgreen.svg?style=plastic)
 - [MobileNetV2](#mobilenetv2-2018-paper-by-sandler-et-al), 2018
 
-## LeNet-5 [1998, [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) by LeCun et al.] [↑](#list-of-architectures-in-this-guide)
+## LeNet-5 [1998, [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) by LeCun et al.]
 
 ![LeNet-5](/images/lenet-5.png)
 
@@ -49,7 +49,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 - [Convolution animations](https://github.com/vdumoulin/conv_arithmetic) GIFs
 - Probability concepts explained: [Maximum likelihood estimation](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1)
 
-## AlexNet [2012, [paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) by Krizhevsky et al.] [↑](#list-of-architectures-in-this-guide)
+## AlexNet [2012, [paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) by Krizhevsky et al.] 
 
 ![xxx](/images/alexnet.png)
 
@@ -61,7 +61,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## ZFNet [2013, [paper](https://arxiv.org/pdf/1311.2901v3.pdf) by Zeiler et al.] [↑](#list-of-architectures-in-this-guide)
+## ZFNet [2013, [paper](https://arxiv.org/pdf/1311.2901v3.pdf) by Zeiler et al.] 
 
 ![xxx](/images/zfnet.png)
 
@@ -73,7 +73,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## GoogLeNet [2014, [paper](https://arxiv.org/abs/1409.4842) by Szegedy et al.] [↑](#list-of-architectures-in-this-guide)
+## GoogLeNet [2014, [paper](https://arxiv.org/abs/1409.4842) by Szegedy et al.] 
 
 ![xxx](/images/googlenet.png)
 
@@ -85,7 +85,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## Inception [2014, [paper](https://arxiv.org/pdf/1409.4842v1.pdf) by Szegedy et al.] [↑](#list-of-architectures-in-this-guide)
+## Inception [2014, [paper](https://arxiv.org/pdf/1409.4842v1.pdf) by Szegedy et al.] 
 
 ![xxx](/images/inception.png)
 
@@ -97,7 +97,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## VGG [2014, [paper](https://arxiv.org/abs/1409.1556) by Simonyan et al.] [↑](#list-of-architectures-in-this-guide)
+## VGG [2014, [paper](https://arxiv.org/abs/1409.1556) by Simonyan et al.] 
 
 ![xxx](/images/vgg.png)
 
@@ -109,7 +109,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## InceptionV2, InceptionV3 [2015, [paper](https://arxiv.org/abs/1512.00567) by Szegedy et al.] [↑](#list-of-architectures-in-this-guide)
+## InceptionV2, InceptionV3 [2015, [paper](https://arxiv.org/abs/1512.00567) by Szegedy et al.] 
 
 ![xxx](/images/inceptionv2.png)
 
@@ -123,7 +123,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## ResNet [2015, [paper](https://arxiv.org/abs/1512.03385) by He et al.] [↑](#list-of-architectures-in-this-guide)
+## ResNet [2015, [paper](https://arxiv.org/abs/1512.03385) by He et al.] 
 
 ![xxx](/images/resnet.png)
 
@@ -135,7 +135,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## InceptionV4, InceptionResNetV2 [2016, [paper](https://arxiv.org/abs/1602.07261) by Szegedy et al.] [↑](#list-of-architectures-in-this-guide)
+## InceptionV4, InceptionResNetV2 [2016, [paper](https://arxiv.org/abs/1602.07261) by Szegedy et al.] 
 
 ![xxx](/images/inceptionv4.png)
 
@@ -149,7 +149,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## DenseNet [2016, [paper](https://arxiv.org/abs/1608.06993) by Huang et al.] [↑](#list-of-architectures-in-this-guide)
+## DenseNet [2016, [paper](https://arxiv.org/abs/1608.06993) by Huang et al.] 
 
 ![xxx](/images/densenet.png)
 
@@ -161,7 +161,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## Xception [2016, [paper](https://arxiv.org/abs/1610.02357) by Chollet] [↑](#list-of-architectures-in-this-guide)
+## Xception [2016, [paper](https://arxiv.org/abs/1610.02357) by Chollet] 
 
 ![xxx](/images/xception.png)
 
@@ -173,7 +173,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## MobileNet [2017, [paper](https://arxiv.org/abs/1704.04861) by Howard et al.] [↑](#list-of-architectures-in-this-guide)
+## MobileNet [2017, [paper](https://arxiv.org/abs/1704.04861) by Howard et al.] 
 
 ![xxx](/images/mobilenet.png)
 
@@ -185,7 +185,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## NASNet [2017, [blogpost](https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html) | [paper](https://arxiv.org/pdf/1707.07012.pdf) by Zoph et al.] [↑](#list-of-architectures-in-this-guide)
+## NASNet [2017, [blogpost](https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html) | [paper](https://arxiv.org/pdf/1707.07012.pdf) by Zoph et al.] 
 
 ![xxx](/images/nasnet.png)
 
@@ -197,7 +197,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## SE-ResNet [2017, [paper](https://arxiv.org/pdf/1709.01507v1.pdf) by Hu et al.] [↑](#list-of-architectures-in-this-guide)
+## SE-ResNet [2017, [paper](https://arxiv.org/pdf/1709.01507v1.pdf) by Hu et al.] 
 
 ![xxx](/images/se-resnet.png)
 
@@ -209,7 +209,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## MobileNetV2 [2018, [paper](https://arxiv.org/abs/1801.04381) by Sandler et al.] [↑](#list-of-architectures-in-this-guide)
+## MobileNetV2 [2018, [paper](https://arxiv.org/abs/1801.04381) by Sandler et al.] 
 
 ![xxx](/images/mobilenetv2.png)
 
@@ -221,7 +221,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 **Additional readings**:
 
-## XXX [20xx, [paper]() by XXX et al.] [↑](#list-of-architectures-in-this-guide)
+## XXX [20xx, [paper]() by XXX et al.] 
 
 ![xxx](/images/xxx.png)
 
