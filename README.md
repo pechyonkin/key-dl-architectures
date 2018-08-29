@@ -26,17 +26,17 @@ Sorted in chronological order. Click an architecture name to jump to correspondi
 
 ![LeNet-5](/images/lenet-5.png)
 
-**Main ideas**: local receptive fields, shared weights, spacial subsampling
+**Main ideas**: convolution, local receptive fields, shared weights, spacial subsampling
 
 **Why it is important**: LeNet-5 was used on large scale to automatically classify hand-written digits on bank cheques in the United States. This network is **the first convolutional neural network** (CNN). CNNs introduced in the paper are the foundation of modern state-of-the art deep learning. These networks are built upon 3 main ideas: local receptive fields, shared weights and spacial subsampling. Local receptive fields with shared weights are the essence of the convolutional layer and most [ALL?] architectures described below use convolutional layers in one form or another. 
 
-Another reason why LeNet is an important architecture is that before it character recognition had been done mostly by using feature engineering by hand, followed by a machine learning model to learn to classify hand engineered features. LeNet made hand engineering features redundant, because the network learns the best internal representation from raw images automatically.  
+Another reason why LeNet is an important architecture is that before it was invented, character recognition had been done mostly by using feature engineering by hand, followed by a machine learning model to learn to classify hand engineered features. LeNet made hand engineering features redundant, because the network learns the best internal representation from raw images automatically.  
 
 **Brief description**: by modern standards, LeNet-5 is a very simple network. It only has 7 layers, among which there are 3 convolutional layers (C1, C3 and C5), 2 sub-sampling (pooling) layers (S2 and S4), and 1 fully connected layer (F6), that are followed by the output layer. Convolutional layers use 5 by 5 convolutions with stride 1. Sub-sampling layers are 2 by 2 average pooling layers. Tanh sigmoid activations are used throughout the network. There are several interesting architectural choices that were made in LeNet-5 that are not very common in the modern era of deep learning. 
 
 First, individual convolutional kernels in the layer C3 do not use all of the features produced by the layer S2, which is very unusual by today's standard. One reason for that is to made the network less computationally demanding. The other reason was to make convolutional kernels learn different patterns. This makes perfect sense: if different kernels receive different inputs, they will learn different patterns.
 
-Second, the output layer uses 10 Euclidean Radial Basis Function neurons that compute L2 distance between the input vector of dimension 84 and **84 manually predefined weights**. The number 84 comes from the fact that essentially the weights represent a 7x12 binary mask, one for each digit. This forces network to transform input image into an internal representation that will make outputs of layer F6 as close as possible to hand-coded weights of the 10 neurons of the output layer. Because the loss function is Maximum Likelihood Estimation criterion, minimizing the output of neurons in the output layer corresponding to the correct label is equivalent to minimizing the logarithm of the probability of the correct class (which is equivalent to maximizing the probability of the correct class).
+Second, the output layer uses 10 Euclidean Radial Basis Function neurons that compute L2 distance between the input vector of dimension 84 and **manually predefined weights vectors** of the same dimension. The number 84 comes from the fact that essentially the weights represent a 7x12 binary mask, one for each digit. This forces network to transform input image into an internal representation that will make outputs of layer F6 as close as possible to hand-coded weights of the 10 neurons of the output layer.
 
 LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was very close to the state of the art at the time (which was produced by a boosted ensemble of three LeNet-4 networks).
 
@@ -53,13 +53,19 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 ![xxx](/images/alexnet.png)
 
-**Main ideas**: 
+**Main ideas**: ReLU nonlinearity, training on multiple GPUs, local response normalization, overlapping pooling, data augmentation, dropout
 
-**Why it is important**: 
+**Why it is important**: AlexNet won the ImageNet competition in 2012 by a large margin. It was the biggest network at the time. It demonstrated the potential of training large neural networks quickly on massive datasets using widely available gaming GPUs. Before that neural networks had been trained mainly by using CPU.  
 
 **Brief description**:
 
 **Additional readings**:
+
+- Paper: [Rectified Linear Units Improve Restricted Boltzmann Machines](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.6419&rep=rep1&type=pdf)
+- Paper: [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf)
+- Quora: [Why are GPUs well-suited to deep learning?](https://www.quora.com/Why-are-GPUs-well-suited-to-deep-learning)
+- [Why are GPUs necessary for training Deep Learning models?](https://www.analyticsvidhya.com/blog/2017/05/gpus-necessary-for-deep-learning/)
+- [Data Augmentation | How to use Deep Learning when you have Limited Data ](https://medium.com/nanonets/how-to-use-deep-learning-when-you-have-limited-data-part-2-data-augmentation-c26971dc8ced)
 
 ## ZFNet [2013, [paper](https://arxiv.org/pdf/1311.2901v3.pdf) by Zeiler et al.] 
 
