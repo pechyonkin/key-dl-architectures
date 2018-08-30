@@ -57,7 +57,10 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 ## AlexNet [2012, [paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) by Krizhevsky et al.] 
 
-![xxx](/images/alexnet-arch.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-arch.png" width="600">
+  AlexNet architecture
+</p>
 
 ### **Main ideas**
 
@@ -78,13 +81,14 @@ ReLU is a so-called *non-saturating activation*. This
 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-formula.png" width="600"></br>
-  <small>Some text here.</small>
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-formula.png" width="600">
+  Local response normalization formula
 </p>
 
-![alexnet-norm-formula](/images/alexnet-norm-formula.png)
-
-![alexnet-norm-excel](/images/alexnet-norm-excel.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-excel.png" width="300">
+  An example of local response normalization
+</p>
 
 #### Overlapping pooling
 
@@ -104,7 +108,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## ZFNet [2013, [paper](https://arxiv.org/pdf/1311.2901v3.pdf) by Zeiler et al.] 
 
-![xxx](/images/zfnet.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/zfnet.png" width="600">
+  ZFNet architecture
+</p>
 
 ### **Main ideas**
 
@@ -116,7 +123,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## GoogLeNet [2014, [paper](https://arxiv.org/abs/1409.4842) by Szegedy et al.] 
 
-![xxx](/images/googlenet.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/googlenet.png" width="600">
+  GoogLeNet architecture
+</p>
 
 ### **Main ideas**
 
@@ -128,7 +138,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## Inception [2014, [paper](https://arxiv.org/pdf/1409.4842v1.pdf) by Szegedy et al.] 
 
-![xxx](/images/inception.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inception.png" width="600">
+  Inception architecture
+</p>
 
 ### **Main ideas**
 
@@ -140,7 +153,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## VGG [2014, [paper](https://arxiv.org/abs/1409.1556) by Simonyan et al.] 
 
-![xxx](/images/vgg.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/vgg.png" width="600">
+  VGG architecture
+</p>
 
 ### **Main ideas**
 
@@ -150,11 +166,17 @@ ReLU is a so-called *non-saturating activation*. This
 
 ### **Additional readings**
 
-## InceptionV2, InceptionV3 [2015, [paper](https://arxiv.org/abs/1512.00567) by Szegedy et al.] 
+## InceptionV2, InceptionV3 [2015, [paper](https://arxiv.org/abs/1512.00567) by Szegedy et al.]
 
-![xxx](/images/inceptionv2.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionv2.png" width="600">
+  InceptionV2 architecture
+</p>
 
-![xxx](/images/inceptionv3.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionv3.png" width="600">
+  InceptionV3 architecture
+</p>
 
 ### **Main ideas**
 
@@ -166,7 +188,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## ResNet [2015, [paper](https://arxiv.org/abs/1512.03385) by He et al.] 
 
-![xxx](/images/resnet.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/resnet.png" width="600">
+  ResNet architecture
+</p>
 
 ### **Main ideas**
 
@@ -178,9 +203,15 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## InceptionV4, InceptionResNetV2 [2016, [paper](https://arxiv.org/abs/1602.07261) by Szegedy et al.] 
 
-![xxx](/images/inceptionv4.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionv4.png" width="600">
+  InceptionV4 architecture
+</p>
 
-![xxx](/images/inceptionresnet.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionresnet.png" width="600">
+  InceptionResNetV2 architecture
+</p>
 
 ### **Main ideas**
 
@@ -192,7 +223,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## DenseNet [2016, [paper](https://arxiv.org/abs/1608.06993) by Huang et al.] 
 
-![xxx](/images/densenet.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/densenet.png" width="600">
+  DenseNet architecture
+</p>
 
 ### **Main ideas**
 
@@ -204,7 +238,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## Xception [2016, [paper](https://arxiv.org/abs/1610.02357) by Chollet] 
 
-![xxx](/images/xception.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/xception.png" width="600">
+  Xception architecture
+</p>
 
 ### **Main ideas**
 
@@ -216,7 +253,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## MobileNet [2017, [paper](https://arxiv.org/abs/1704.04861) by Howard et al.] 
 
-![xxx](/images/mobilenet.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/mobilenet.png" width="600">
+  MobileNet architecture
+</p>
 
 ### **Main ideas**
 
@@ -228,7 +268,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## NASNet [2017, [blogpost](https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html) | [paper](https://arxiv.org/pdf/1707.07012.pdf) by Zoph et al.] 
 
-![xxx](/images/nasnet.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/nasnet.png" width="600">
+  NASNet architecture
+</p>
 
 ### **Main ideas**
 
@@ -240,7 +283,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## SE-ResNet [2017, [paper](https://arxiv.org/pdf/1709.01507v1.pdf) by Hu et al.] 
 
-![xxx](/images/se-resnet.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/se-resnet.png" width="600">
+  SE-ResNet architecture
+</p>
 
 ### **Main ideas**
 
@@ -252,7 +298,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## MobileNetV2 [2018, [paper](https://arxiv.org/abs/1801.04381) by Sandler et al.] 
 
-![xxx](/images/mobilenetv2.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/mobilenetv2.png" width="600">
+  MobileNetV2 architecture
+</p>
 
 ### **Main ideas**
 
@@ -264,7 +313,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 ## XXX [20xx, [paper]() by XXX et al.] 
 
-![xxx](/images/xxx.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/xxx.png" width="600">
+  xxx
+</p>
 
 ### **Main ideas**
 
