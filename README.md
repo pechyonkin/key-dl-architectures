@@ -83,7 +83,7 @@ ReLU is a so-called *non-saturating activation*. This
 
 <p align="center">
   <img src="/images/alexnet-norm-formula.png" width="400">
-  <figcaption>This is my caption text.</figcaption>
+  <figcaption style="text-align: center">This is my caption text.</figcaption>
 </p>
 
 ![alexnet-norm-formula](/images/alexnet-norm-formula.png)
