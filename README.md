@@ -76,12 +76,19 @@ AlexNet won the ImageNet competition in 2012 by a large margin. It was the bigge
 ### **Brief description**
 
 #### ReLU nonlinearity
-ReLU is a so-called *non-saturating activation*. This
+
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-relu.png" width="600"><br/>
+  The benefits of ReLU (excerpt from the paper)
+</p>
+
+ReLU is a so-called *non-saturating activation*. This means that gradient will never be close to zero for a positive activation and as result, the training will be faster. By contrast, sigmoid activations are *saturating*, which makes gradient close to zero for large values of activations. Very small gradient will make the network train slower, because the step size during weight update will be small.
+
+By employing ReLU, training speed of the network was **six times faster** as compared to classical sigmoid activations that had been popular before ReLU. Today, ReLU is the default choice of activation function.
 
 #### Trainig on multiple GPUs
 
-#### Local responce normaliztion
-
+#### Local responce normalization
 
 <p align="center">
   <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-formula.png" width="600"><br/>
@@ -97,6 +104,16 @@ ReLU is a so-called *non-saturating activation*. This
 
 #### Data augmentation
 
+Data augmentation is a regularization strategy (a way to prevent overfitting). AlexNet uses two data augmentation approaches. 
+
+The first takes random crops of input images, as well as rotations and flips and uses them as inputs to the network during training. This allows to vastly increase the size of the data; the authors mention the increase by the factor of 2048. Another benefit is the fact that augmentation is performed on the fly on CPU while the GPUs train previous batch of data. In other words, this type of augmentation is essentially computationally free, and also does not require to store augmented images on disk.
+
+The second data augmentation strategy is so-called *PCA color augmentation*. First, PCA on all pixels of ImageNet data set is performed (a pixel is treated as a 3-dimensional vector for this purpose). As result, we get a 3x3 covariance matrix, as well as 3 eigenvectors and 3 eigenvalues. During training, a random intensity factor based on PCA components is added to each color channel of an image. This scheme reduces top-1 error rate by over 1% which is a significant reduction.
+
+#### Test time data augmentation
+
+The authors do not explicitly mention this as contribution of their paper, but they still employed this strategy. During test time, 5 crops of original test image (4 corners and center) are taken and predictions are made. Then predictions are averaged to make the final prediction. This improves testing performance.
+
 #### Dropout
 
 #### Architecture
@@ -108,6 +125,10 @@ ReLU is a so-called *non-saturating activation*. This
 - Quora: [Why are GPUs well-suited to deep learning?](https://www.quora.com/Why-are-GPUs-well-suited-to-deep-learning)
 - [Why are GPUs necessary for training Deep Learning models?](https://www.analyticsvidhya.com/blog/2017/05/gpus-necessary-for-deep-learning/)
 - [Data Augmentation | How to use Deep Learning when you have Limited Data ](https://medium.com/nanonets/how-to-use-deep-learning-when-you-have-limited-data-part-2-data-augmentation-c26971dc8ced)
+- Color intensity data augmentation: [Fancy PCA (Data Augmentation) with Scikit-Image](https://deshanadesai.github.io/notes/Fancy-PCA-with-Scikit-Image)
+- [PCA Color Augmentation](https://machinelearning.wtf/terms/pca-color-augmentation/)
+- Since PCA in the paper is done on the whole entirety of ImageNet data set(or maybe subsample, but that is not mentioned), the data might not fit in memory. In that case, [incremental PCA](http://scikit-learn.org/stable/auto_examples/decomposition/plot_incremental_pca.html) may be used that performs PCA in batches. [This thread](https://stackoverflow.com/questions/31428581/incremental-pca-on-big-data) is also useful in explaining how to do partial PCA without loading the whole data in memory. 
+- [Test time augmentation](https://towardsdatascience.com/augmentation-for-image-classification-24ffcbc38833)
 
 ## ZFNet [2013, [paper](https://arxiv.org/pdf/1311.2901v3.pdf) by Zeiler et al.] 
 
