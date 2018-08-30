@@ -76,7 +76,7 @@ ReLU is a so-called *non-saturating activation*. This
 
 #### Local responce normaliztion
 
-![alexnet-norm-formula](/images/alexnet-norm-formula.png)
+![alexnet-norm-formula](/images/alexnet-norm-formula.png | width=50)
 
 ![alexnet-norm-excel](/images/alexnet-norm-excel.png)
 
