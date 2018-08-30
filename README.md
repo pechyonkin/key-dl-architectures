@@ -75,11 +75,14 @@ ReLU is a so-called *non-saturating activation*. This
 #### Trainig on multiple GPUs
 
 #### Local responce normaliztion
-<p align="center">
+
 <figure style="text-align:center">
   <img src="/images/alexnet-norm-formula.png" width="400">
   <figcaption>This is my caption text.</figcaption>
 </figure>
+
+<p align="center">
+  <img src="/images/alexnet-norm-formula.png" width="400">
 </p>
 
 ![alexnet-norm-formula](/images/alexnet-norm-formula.png)
