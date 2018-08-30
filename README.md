@@ -24,7 +24,10 @@ Sorted in chronological order. Click an architecture name to jump to correspondi
 
 ## LeNet-5 [1998, [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) by LeCun et al.]
 
-![LeNet-5](/images/lenet-5.png)
+<p align="center">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/lenet-5.png" width="600"><br/>
+  LeNet-5 architecture
+</p>
 
 ### **Main ideas**
 
@@ -58,7 +61,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 ## AlexNet [2012, [paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) by Krizhevsky et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-arch.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-arch.png" width="600"><br/>
   AlexNet architecture
 </p>
 
