@@ -100,7 +100,7 @@ By employing ReLU, training speed of the network was **six times faster** as com
 #### Overlapping pooling
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-excel.png" width="400"><br/>
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-overlapping-pooling.jpg" width="600"><br/>
   Overlapping pooling of the kind used by AlexNet. <a href="https://blog.acolyer.org/overlapping-pooling-jpeg/">Source</a>.
 </p>
 
