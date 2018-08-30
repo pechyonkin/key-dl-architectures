@@ -7,7 +7,7 @@ This repository provides overview of some of the prominent neural network archit
 Sorted in chronological order. Click an architecture name to jump to corresponding part of the guide.
 
 - [LeNet](#lenet-5-1998-paper-by-lecun-et-al)
-- [AlexNet](#alexnet-2012-paper-by-krizhevsky-et-al), 2012 ![imagenet_winner 2012](https://img.shields.io/badge/imagenet_winner-2012-brightgreen.svg?style=plastic)
+- [AlexNet](#alexnet-2012-paper-by-krizhevsky-et-al) ![imagenet_winner 2012](https://img.shields.io/badge/imagenet_winner-2012-brightgreen.svg?style=plastic)
 - [ZFNet](#zfnet-2013-paper-by-zeiler-et-al), 2013 ![imagenet_winner 2012](https://img.shields.io/badge/imagenet_winner-2013-brightgreen.svg?style=plastic)
 - [GoogLeNet](#googlenet-2014-paper-by-szegedy-et-al), 2014 ![imagenet_winner 2014](https://img.shields.io/badge/imagenet_winner-2014-brightgreen.svg?style=plastic)
 - [Inception](#inception-2014-paper-by-szegedy-et-al), 2014
@@ -26,13 +26,19 @@ Sorted in chronological order. Click an architecture name to jump to correspondi
 
 ![LeNet-5](/images/lenet-5.png)
 
-**Main ideas**: convolution, local receptive fields, shared weights, spacial subsampling
+###**Main ideas**
 
-**Why it is important**: LeNet-5 was used on large scale to automatically classify hand-written digits on bank cheques in the United States. This network is **the first convolutional neural network** (CNN). CNNs introduced in the paper are the foundation of modern state-of-the art deep learning. These networks are built upon 3 main ideas: local receptive fields, shared weights and spacial subsampling. Local receptive fields with shared weights are the essence of the convolutional layer and most [ALL?] architectures described below use convolutional layers in one form or another. 
+convolution, local receptive fields, shared weights, spacial subsampling
+
+###**Why it is important**
+
+LeNet-5 was used on large scale to automatically classify hand-written digits on bank cheques in the United States. This network is **the first convolutional neural network** (CNN). CNNs introduced in the paper are the foundation of modern state-of-the art deep learning. These networks are built upon 3 main ideas: local receptive fields, shared weights and spacial subsampling. Local receptive fields with shared weights are the essence of the convolutional layer and most [ALL?] architectures described below use convolutional layers in one form or another. 
 
 Another reason why LeNet is an important architecture is that before it was invented, character recognition had been done mostly by using feature engineering by hand, followed by a machine learning model to learn to classify hand engineered features. LeNet made hand engineering features redundant, because the network learns the best internal representation from raw images automatically.  
 
-**Brief description**: by modern standards, LeNet-5 is a very simple network. It only has 7 layers, among which there are 3 convolutional layers (C1, C3 and C5), 2 sub-sampling (pooling) layers (S2 and S4), and 1 fully connected layer (F6), that are followed by the output layer. Convolutional layers use 5 by 5 convolutions with stride 1. Sub-sampling layers are 2 by 2 average pooling layers. Tanh sigmoid activations are used throughout the network. There are several interesting architectural choices that were made in LeNet-5 that are not very common in the modern era of deep learning. 
+###**Brief description**
+
+By modern standards, LeNet-5 is a very simple network. It only has 7 layers, among which there are 3 convolutional layers (C1, C3 and C5), 2 sub-sampling (pooling) layers (S2 and S4), and 1 fully connected layer (F6), that are followed by the output layer. Convolutional layers use 5 by 5 convolutions with stride 1. Sub-sampling layers are 2 by 2 average pooling layers. Tanh sigmoid activations are used throughout the network. There are several interesting architectural choices that were made in LeNet-5 that are not very common in the modern era of deep learning. 
 
 First, individual convolutional kernels in the layer C3 do not use all of the features produced by the layer S2, which is very unusual by today's standard. One reason for that is to made the network less computationally demanding. The other reason was to make convolutional kernels learn different patterns. This makes perfect sense: if different kernels receive different inputs, they will learn different patterns.
 
@@ -40,7 +46,7 @@ Second, the output layer uses 10 Euclidean Radial Basis Function neurons that co
 
 LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was very close to the state of the art at the time (which was produced by a boosted ensemble of three LeNet-4 networks).
 
-**Additional readings**:
+###**Additional readings**
 
 - [Understanding Neural Networks Using Excel](https://towardsdatascience.com/understanding-convolutions-using-excel-886ca0a964b7)
 - [Convolutional Neural Networks (CNNs / ConvNets)](https://cs231n.github.io/convolutional-networks/)
@@ -51,15 +57,38 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 ## AlexNet [2012, [paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) by Krizhevsky et al.] 
 
-![xxx](/images/alexnet.png)
+![xxx](/images/alexnet-arch.png)
 
-**Main ideas**: ReLU nonlinearity, training on multiple GPUs, local response normalization, overlapping pooling, data augmentation, dropout
+###**Main ideas**
 
-**Why it is important**: AlexNet won the ImageNet competition in 2012 by a large margin. It was the biggest network at the time. It demonstrated the potential of training large neural networks quickly on massive datasets using widely available gaming GPUs. Before that neural networks had been trained mainly by using CPU.  
+ReLU nonlinearity, training on multiple GPUs, local response normalization, overlapping pooling, data augmentation, dropout
 
-**Brief description**:
+###**Why it is important**
 
-**Additional readings**:
+AlexNet won the ImageNet competition in 2012 by a large margin. It was the biggest network at the time. The network demonstrated the potential of training large neural networks quickly on massive datasets using widely available gaming GPUs; before that neural networks had been trained mainly by using CPUs. AlexNet also used novel ReLU activation, data augmentation, dropout and local response normalization. All of these allowed to achieve state-of-the art performance in object recognition in 2012.
+
+###**Brief description**
+
+#### ReLU nonlinearity
+ReLU is a so-called *non-saturating activation*. This
+
+#### Trainig on multiple GPUs
+
+#### Local responce normaliztion
+
+![alexnet-norm-formula](/images/alexnet-norm-formula.png)
+
+![alexnet-norm-excel](/images/alexnet-norm-excel.png)
+
+#### Overlapping pooling
+
+#### Data augmentation
+
+#### Dropout
+
+#### Architecture
+
+###**Additional readings**
 
 - Paper: [Rectified Linear Units Improve Restricted Boltzmann Machines](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.6419&rep=rep1&type=pdf)
 - Paper: [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf)
@@ -71,49 +100,49 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 ![xxx](/images/zfnet.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## GoogLeNet [2014, [paper](https://arxiv.org/abs/1409.4842) by Szegedy et al.] 
 
 ![xxx](/images/googlenet.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## Inception [2014, [paper](https://arxiv.org/pdf/1409.4842v1.pdf) by Szegedy et al.] 
 
 ![xxx](/images/inception.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## VGG [2014, [paper](https://arxiv.org/abs/1409.1556) by Simonyan et al.] 
 
 ![xxx](/images/vgg.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## InceptionV2, InceptionV3 [2015, [paper](https://arxiv.org/abs/1512.00567) by Szegedy et al.] 
 
@@ -121,25 +150,25 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 ![xxx](/images/inceptionv3.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## ResNet [2015, [paper](https://arxiv.org/abs/1512.03385) by He et al.] 
 
 ![xxx](/images/resnet.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## InceptionV4, InceptionResNetV2 [2016, [paper](https://arxiv.org/abs/1602.07261) by Szegedy et al.] 
 
@@ -147,97 +176,97 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 
 ![xxx](/images/inceptionresnet.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## DenseNet [2016, [paper](https://arxiv.org/abs/1608.06993) by Huang et al.] 
 
 ![xxx](/images/densenet.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## Xception [2016, [paper](https://arxiv.org/abs/1610.02357) by Chollet] 
 
 ![xxx](/images/xception.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## MobileNet [2017, [paper](https://arxiv.org/abs/1704.04861) by Howard et al.] 
 
 ![xxx](/images/mobilenet.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## NASNet [2017, [blogpost](https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html) | [paper](https://arxiv.org/pdf/1707.07012.pdf) by Zoph et al.] 
 
 ![xxx](/images/nasnet.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## SE-ResNet [2017, [paper](https://arxiv.org/pdf/1709.01507v1.pdf) by Hu et al.] 
 
 ![xxx](/images/se-resnet.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## MobileNetV2 [2018, [paper](https://arxiv.org/abs/1801.04381) by Sandler et al.] 
 
 ![xxx](/images/mobilenetv2.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 ## XXX [20xx, [paper]() by XXX et al.] 
 
 ![xxx](/images/xxx.png)
 
-**Main ideas**: 
+###**Main ideas**
 
-**Why it is important**: 
+###**Why it is important**
 
-**Brief description**:
+###**Brief description**
 
-**Additional readings**:
+###**Additional readings**
 
 
 [Badge generator](https://rozaxe.github.io/factory/)
