@@ -76,14 +76,10 @@ ReLU is a so-called *non-saturating activation*. This
 
 #### Local responce normaliztion
 
-<figure style="text-align:center">
-  <img src="/images/alexnet-norm-formula.png" width="400">
-  <figcaption>This is my caption text.</figcaption>
-</figure>
 
 <p align="center">
-  <img src="/images/alexnet-norm-formula.png" width="400">
-  <figcaption style="text-align: center">This is my caption text.</figcaption>
+  <img src="/images/alexnet-norm-formula.png" width="400"></br>
+  Some text here.
 </p>
 
 ![alexnet-norm-formula](/images/alexnet-norm-formula.png)
