@@ -25,7 +25,7 @@ Sorted in chronological order. Click an architecture name to jump to correspondi
 ## LeNet-5 [1998, [paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) by LeCun et al.]
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/lenet-5.png" width="600"><br/>
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/lenet-5.png" width="800"><br/>
   LeNet-5 architecture
 </p>
 
@@ -61,7 +61,7 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 ## AlexNet [2012, [paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) by Krizhevsky et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-arch.png" width="600"><br/>
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-arch.png" width="800"><br/>
   AlexNet architecture
 </p>
 
@@ -84,12 +84,12 @@ ReLU is a so-called *non-saturating activation*. This
 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-formula.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-formula.png" width="600"><br/>
   Local response normalization formula
 </p>
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-excel.png" width="300">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-excel.png" width="300"><br/>
   An example of local response normalization
 </p>
 
@@ -112,7 +112,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## ZFNet [2013, [paper](https://arxiv.org/pdf/1311.2901v3.pdf) by Zeiler et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/zfnet.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/zfnet.png" width="600"><br/>
   ZFNet architecture
 </p>
 
@@ -127,7 +127,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## GoogLeNet [2014, [paper](https://arxiv.org/abs/1409.4842) by Szegedy et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/googlenet.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/googlenet.png" width="600"><br/>
   GoogLeNet architecture
 </p>
 
@@ -142,7 +142,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## Inception [2014, [paper](https://arxiv.org/pdf/1409.4842v1.pdf) by Szegedy et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inception.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inception.png" width="600"><br/>
   Inception architecture
 </p>
 
@@ -157,7 +157,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## VGG [2014, [paper](https://arxiv.org/abs/1409.1556) by Simonyan et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/vgg.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/vgg.png" width="600"><br/>
   VGG architecture
 </p>
 
@@ -172,12 +172,12 @@ ReLU is a so-called *non-saturating activation*. This
 ## InceptionV2, InceptionV3 [2015, [paper](https://arxiv.org/abs/1512.00567) by Szegedy et al.]
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionv2.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionv2.png" width="600"><br/>
   InceptionV2 architecture
 </p>
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionv3.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionv3.png" width="600"><br/>
   InceptionV3 architecture
 </p>
 
@@ -192,7 +192,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## ResNet [2015, [paper](https://arxiv.org/abs/1512.03385) by He et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/resnet.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/resnet.png" width="600"><br/>
   ResNet architecture
 </p>
 
@@ -207,12 +207,12 @@ ReLU is a so-called *non-saturating activation*. This
 ## InceptionV4, InceptionResNetV2 [2016, [paper](https://arxiv.org/abs/1602.07261) by Szegedy et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionv4.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionv4.png" width="600"><br/>
   InceptionV4 architecture
 </p>
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionresnet.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/inceptionresnet.png" width="600"><br/>
   InceptionResNetV2 architecture
 </p>
 
@@ -227,7 +227,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## DenseNet [2016, [paper](https://arxiv.org/abs/1608.06993) by Huang et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/densenet.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/densenet.png" width="600"><br/>
   DenseNet architecture
 </p>
 
@@ -242,7 +242,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## Xception [2016, [paper](https://arxiv.org/abs/1610.02357) by Chollet] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/xception.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/xception.png" width="600"><br/>
   Xception architecture
 </p>
 
@@ -257,7 +257,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## MobileNet [2017, [paper](https://arxiv.org/abs/1704.04861) by Howard et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/mobilenet.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/mobilenet.png" width="600"><br/>
   MobileNet architecture
 </p>
 
@@ -272,7 +272,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## NASNet [2017, [blogpost](https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html) | [paper](https://arxiv.org/pdf/1707.07012.pdf) by Zoph et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/nasnet.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/nasnet.png" width="600"><br/>
   NASNet architecture
 </p>
 
@@ -287,7 +287,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## SE-ResNet [2017, [paper](https://arxiv.org/pdf/1709.01507v1.pdf) by Hu et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/se-resnet.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/se-resnet.png" width="600"><br/>
   SE-ResNet architecture
 </p>
 
@@ -302,7 +302,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## MobileNetV2 [2018, [paper](https://arxiv.org/abs/1801.04381) by Sandler et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/mobilenetv2.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/mobilenetv2.png" width="600"><br/>
   MobileNetV2 architecture
 </p>
 
@@ -317,7 +317,7 @@ ReLU is a so-called *non-saturating activation*. This
 ## XXX [20xx, [paper]() by XXX et al.] 
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/xxx.png" width="600">
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/xxx.png" width="600"><br/>
   xxx
 </p>
 
