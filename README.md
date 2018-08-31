@@ -75,15 +75,13 @@ AlexNet won the ImageNet competition in 2012 by a large margin. It was the bigge
 #### ReLU nonlinearity
 
 <p align="center">
-  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-relu.png" width="200"><br/>
+  <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-relu.png" width="300"><br/>
   The benefits of ReLU (excerpt from the paper)
 </p>
 
 ReLU is a so-called *non-saturating activation*. This means that gradient will never be close to zero for a positive activation and as result, the training will be faster. By contrast, sigmoid activations are *saturating*, which makes gradient close to zero for large values of activations. Very small gradient will make the network train slower, because the step size during gradient descent's weight update will be small.
 
 By employing ReLU, training speed of the network was **six times faster** as compared to classical sigmoid activations that had been popular before ReLU. Today, ReLU is the default choice of activation function.
-
-#### Trainig on multiple GPUs
 
 #### Local response normalization
 
@@ -96,6 +94,8 @@ By employing ReLU, training speed of the network was **six times faster** as com
   <img src="https://github.com/pechyonkin/key-dl-architectures/blob/master/images/alexnet-norm-excel.png" width="300"><br/>
   An example of local response normalization
 </p>
+
+After layers C1 and C2, activities of neurons were normalized according to the formula above. What this did is scaled the activities down by taking into account 5 neuron activities at preceding and following feature channels at the same spatial position. These activities were squared and used together with parameters *n*, *k*, *alpha* and *beta* to scale down each neuron's activity. Authors argue that this created "competition for big activities amongst neuron outputs computed using different kernels". This approach reduced top-1 error by 1%. In the table above you can see an example of neuron activations scaled down by using this approach. Also note that the values of *n*, *k*, *alpha* and *beta* were selected using cross-validation.
 
 #### Overlapping pooling
 
@@ -133,6 +133,8 @@ Architecture itself is relatively simple. There are 8 trainable layers: 5 convol
 
 Due to the fact that the network resided on 2 GPUs, it had to be split in 2 parts that communicated only partially. Note that layers C2, C4 and C5 only received as inputs outputs of preceding layers that resided on the same GPU. Communication between GPUs only happened at layer C3 as well as F1, F2 and the output layer.
 
+The network was trained using gradient descent with momentum and learning rate decay. In addition, during training, learning rate was decreased manually by the factor of 10 whenever validation error rate stopped improving.
+
 ### **Additional readings**
 
 - Paper: [Rectified Linear Units Improve Restricted Boltzmann Machines](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.6419&rep=rep1&type=pdf)
@@ -142,7 +144,7 @@ Due to the fact that the network resided on 2 GPUs, it had to be split in 2 part
 - [Data Augmentation | How to use Deep Learning when you have Limited Data ](https://medium.com/nanonets/how-to-use-deep-learning-when-you-have-limited-data-part-2-data-augmentation-c26971dc8ced)
 - Color intensity data augmentation: [Fancy PCA (Data Augmentation) with Scikit-Image](https://deshanadesai.github.io/notes/Fancy-PCA-with-Scikit-Image)
 - [PCA Color Augmentation](https://machinelearning.wtf/terms/pca-color-augmentation/)
-- Since PCA in the paper is done on the whole entirety of ImageNet data set(or maybe subsample, but that is not mentioned), the data might not fit in memory. In that case, [incremental PCA](http://scikit-learn.org/stable/auto_examples/decomposition/plot_incremental_pca.html) may be used that performs PCA in batches. [This thread](https://stackoverflow.com/questions/31428581/incremental-pca-on-big-data) is also useful in explaining how to do partial PCA without loading the whole data in memory. 
+- Since PCA in the paper is done on the whole entirety of ImageNet data set (or maybe subsample, but that is not mentioned), the data most probably will not fit in memory. In that case, [incremental PCA](http://scikit-learn.org/stable/auto_examples/decomposition/plot_incremental_pca.html) may be used that performs PCA in batches. [This thread](https://stackoverflow.com/questions/31428581/incremental-pca-on-big-data) is also useful in explaining how to do partial PCA without loading the whole data in memory.
 - [Test time augmentation](https://towardsdatascience.com/augmentation-for-image-classification-24ffcbc38833)
 
 [Return to top](#list-of-architectures-in-this-guide)
