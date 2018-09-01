@@ -35,7 +35,7 @@ convolution, local receptive fields, shared weights, spacial subsampling
 
 ### **Why it is important**
 
-LeNet-5 was used on large scale to automatically classify hand-written digits on bank cheques in the United States. This network is **the first convolutional neural network** (CNN). CNNs introduced in the paper are the foundation of modern state-of-the art deep learning. These networks are built upon 3 main ideas: local receptive fields, shared weights and spacial subsampling. Local receptive fields with shared weights are the essence of the convolutional layer and most [ALL?] architectures described below use convolutional layers in one form or another. 
+LeNet-5 was used on large scale to automatically classify hand-written digits on bank cheques in the United States. This network is a **convolutional neural network** (CNN). CNNs are the foundation of modern state-of-the art deep learning. These networks are built upon 3 main ideas: local receptive fields, shared weights and spacial subsampling. Local receptive fields with shared weights are the essence of the convolutional layer and most architectures described below use convolutional layers in one form or another. 
 
 Another reason why LeNet is an important architecture is that before it was invented, character recognition had been done mostly by using feature engineering by hand, followed by a machine learning model to learn to classify hand engineered features. LeNet made hand engineering features redundant, because the network learns the best internal representation from raw images automatically.  
 
@@ -133,7 +133,7 @@ Architecture itself is relatively simple. There are 8 trainable layers: 5 convol
 
 Due to the fact that the network resided on 2 GPUs, it had to be split in 2 parts that communicated only partially. Note that layers C2, C4 and C5 only received as inputs outputs of preceding layers that resided on the same GPU. Communication between GPUs only happened at layer C3 as well as F1, F2 and the output layer.
 
-The network was trained using gradient descent with momentum and learning rate decay. In addition, during training, learning rate was decreased manually by the factor of 10 whenever validation error rate stopped improving.
+The network was trained using stochastic gradient descent with momentum and learning rate decay. In addition, during training, learning rate was decreased manually by the factor of 10 whenever validation error rate stopped improving.
 
 ### **Additional readings**
 
