@@ -2,6 +2,8 @@
 
 This repository provides overview of some of the prominent neural network architectures. Reading through this guide and all supplement materials will help you develop understanding of the modern neural network architectures and main ideas behind them. Before starting, you should have some familiarity with the basics of neural networks, backpropagation algorithm and gradient descent.
 
+This is the [first](/archs/test.md) article.
+
 ### List of Architectures in this guide
 
 Sorted in chronological order. Click an architecture name to jump to corresponding part of the guide.
