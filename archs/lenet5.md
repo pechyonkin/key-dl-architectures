@@ -34,4 +34,4 @@ LeNet-5 was able to achieve error rate below 1% on the MNIST data set, which was
 - [Convolution animations](https://github.com/vdumoulin/conv_arithmetic) GIFs
 - Probability concepts explained: [Maximum likelihood estimation](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1)
 
-[Return to list of architectures](/README.md)
+↑[Return to list of architectures](/README.md)
